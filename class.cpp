@@ -2,9 +2,9 @@
 
 class Class_{
 private:
-    int ataks_;
+    int attaks_;
     int DiceHP_;
 public:
-    virtual int showataks(){}
+    virtual int showattaks(){}
     int showDiceHP(){return DiceHP_;}
 };
