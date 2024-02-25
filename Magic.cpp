@@ -18,6 +18,6 @@ public:
                 return 5;
          return 6;
         };
-    int GetDamage(){return (lvl/8+2)};
+    int GetDamage(){return (lvl/8+2);}
 };
 
