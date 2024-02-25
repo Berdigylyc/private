@@ -7,4 +7,5 @@ private:
 public:
     virtual int showattaks(){}
     int showDiceHP(){return DiceHP_;}
+    int showMaxAttaks(){return attaks_}
 };
