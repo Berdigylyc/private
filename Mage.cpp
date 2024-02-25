@@ -6,7 +6,7 @@
 class Mage_ : public Class_, public Magic{
 private:
     int attack_ = 1;
-    int magicskill = 2;
+    int magic_skill = 2;
 public:
     int GetAttack(){return (attack_);}
     int GetMagicSkill() {return(magicskill);}
@@ -27,7 +27,7 @@ public:
     std::string GetMainCharacteristic(){return(main_characteristic);}
     int GetDiceHP(){return(DiceHP);}
 };
-class Artificer: public Mage_{
+class Druid: public Mage_{
 private:
     std::string main_characteristic = "Wisdom";
     int DiceHP = 8;
