@@ -4,11 +4,10 @@
 #include "magic.cpp"
 class HalfMage: public Class{
 private:
-    int attack_ =2;
+    int attacks_ =2;
     int magicskill =1;
 public:
-    int GetAttack(){return (attack_);}
-    int GetMagicSkill() {return(magicskill);}
+    int ShowAttacks(int lvl){return(attacks_)}
 };
 class Paladin: public HalfMage{
 private:
@@ -16,7 +15,6 @@ private:
     int DiceHP = 10;
 public:
     std::string GetMainCharacteristic(){return(main_characteristic);}
-    int GetDiceHP(){return(DiceHP);}
 };
 class Ranger: public HalfMage{
 private:
@@ -24,7 +22,6 @@ private:
     int DiceHP = 10;
 public:
     std::string GetMainCharacteristic(){return(main_characteristic);}
-    int GetDiceHP(){return(DiceHP);}
 };
 class Artificer: public HalfMage{
 private:
@@ -32,7 +29,6 @@ private:
     int DiceHP = 8;
 public:
     std::string GetMainCharacteristic(){return(main_characteristic);}
-    int GetDiceHP(){return(DiceHP);}
 };
 
 
