@@ -8,7 +8,7 @@ public:
     std::string GetMainCharacteristic(){return(main_characteristic);}
     int GetMagicSkill(){
         if (magic_skill==2){
-            std::cout<<"—правка: в первом столбце выбираете нужный вам уровень, затем смотрите кака€ цифра написанна в €чейке под первой строкой (уровень €чейки). Ёто число и будет количеством €чейки нужного уровн€"<<std::endl;
+            std::cout<<"First table-level, first string-level of cast"<<std::endl;
             std::cout<<"   1 2 3 4 5 6 7 8 9"<<std::endl;
             std::cout<<" 1 2 0 0 0 0 0 0 0 0"<<std::endl;
             std::cout<<" 2 3 0 0 0 0 0 0 0 0"<<std::endl;
@@ -32,7 +32,7 @@ public:
             std::cout<<"20 4 3 3 3 3 2 2 1 1"<<std::endl;
         }
         if (magic_skill==1){
-            std::cout<<"—правка: в первом столбце выбираете нужный вам уровень, затем смотрите кака€ цифра написанна в €чейке под первой строкой (уровень €чейки). Ёто число и будет количеством €чейки нужного уровн€"<<std::endl;
+            std::cout<<"First table-level, first string-level of cast"<<std::endl;
             std::cout<<"   1 2 3 4 5"<<std::endl;
             std::cout<<" 1 0 0 0 0 0"<<std::endl;
             std::cout<<" 2 2 0 0 0 0"<<std::endl;
