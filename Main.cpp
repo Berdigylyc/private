@@ -20,23 +20,23 @@ int main(){
     int lvl;
     std::cin>>i;
     if (i=="Wa"){
-        Warrior_* a=new Warrior_();
+        Class_* a=new Warrior_();
         std::cout<<"Number of attacks:"<<std::endl;
-        a->showattaks();
+        std::cout<<a->showattaks()<<std::endl;
         std::cout<<"Dice of HP:"<<std::endl;
-        a->showDiceHP();
+        std::cout<<a->showDiceHP()<<std::endl;
         delete[] a;
     }
-    if (i=="M"){
+    /*if (i=="M"){
         Monk_* a=new Monk_();
         std::cout<<"What's level?"<<std::endl;
         std::cin>>lvl;
         std::cout<<"Number of attacks:"<<std::endl;
-        a->showattaks();
+        std::cout<<a->showattaks()<<std::endl;
         std::cout<<"Dice of HP:"<<std::endl;
-        a->showDiceHP();
+        std::cout<<a->showDiceHP()<<std::endl;
         std::cout<<"number of CI"<<std::endl;
-        a->showCI_(lvl);
+        std::cout<<a->showCI_(lvl)<<std::endl;
         delete[] a;
     }
     if (i=="B"){
@@ -44,13 +44,13 @@ int main(){
         std::cout<<"What's level?"<<std::endl;
         std::cin>>lvl;
         std::cout<<"Number of attacks:"<<std::endl;
-        a->showattaks();
+        std::cout<<a->showattaks()<<std::endl;
         std::cout<<"Dice of HP:"<<std::endl;
-        a->showDiceHP();
+        std::cout<<a->showDiceHP()<<std::endl;
         std::cout<<"Rage damage:"<<std::endl;
-        a->GetDamage(lvl);
+        std::cout<<a->GetDamage(lvl)<<std::endl;
         std::cout<<"Number of rage:"<<std::endl;
-        a->GetRampage(lvl);
+        std::cout<<a->GetRampage(lvl)<<std::endl;
         delete[] a;
-    }
+    }*/
 }

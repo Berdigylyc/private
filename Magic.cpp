@@ -1,5 +1,5 @@
-#ifndef Magic
-#define Magic
+#ifndef Magic123
+#define Magic123
 #include<iostream>
 #include<string>
 class Magic{
