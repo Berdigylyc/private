@@ -7,7 +7,7 @@ private:
     int attacks_;
     int magic_skill;
 public:
-    HalfMage(int hp, std::string character):Class(2,hp,1,character)
+    HalfMage(int hp, std::string character):Class(2,hp),Magic(1,character)
 };
 class Paladin: public HalfMage{
 private:
