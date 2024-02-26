@@ -7,6 +7,7 @@ private:
     std::string main_characteristic;
     int magic_skill;
 public:
+    Magic(int a, std::string s): magic_skill(a), main_characteristic(s){}
     std::string GetMainCharacteristic(){return(main_characteristic);}
     void GetMagicSkill(){
         if (magic_skill==2){
@@ -59,7 +60,6 @@ public:
         }
         }
     int GetRampage(int lvl){
-        if (magic_skill==0){
             if (lvl<3)
 	         return 2;
          if (lvl<6)
@@ -69,10 +69,8 @@ public:
          if (lvl<16)
                 return 5;
          return 6;
-        }
         };
     int GetDamage(int lvl){
-        if (magic_skill==0){
-        return (lvl/8+2);}}
+        return (lvl/8+2);}
 };
 #endif // Magic

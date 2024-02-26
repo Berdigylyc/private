@@ -1,6 +1,7 @@
 #ifndef Class_123
 #define Class_123
 #include <iostream>
+#include <string>
 class Class_{
 private:
     int attacks_;
