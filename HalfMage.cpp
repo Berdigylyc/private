@@ -6,8 +6,6 @@ class HalfMage: virtual public Class{
 private:
     int attacks_ =2;
     int magicskill =1;
-public:
-    int ShowAttacks(){return(attacks_)}
 };
 class Paladin: public HalfMage{
 private:
