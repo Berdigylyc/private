@@ -7,7 +7,7 @@ class Mage_ : virtual public Class_, public Magic{
 public:
     int attacks_ = 1;
     int magic_skill = 2;
-    Mage_(int a,int b, str r):Class_(1,b,2,r){}
+    Mage_(int a,int b, str r):Class_(1,b), Magic(2,r);
 };
 class Wizard: public Mage_{
 public:
