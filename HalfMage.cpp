@@ -2,10 +2,10 @@
 #include<string>
 #include "class.cpp"
 #include "Magic.cpp"
-class HalfMage: virtual public Class_{
+class HalfMage: public Class_, public Magic{
 private:
     int attacks_ =2;
-    int magicskill =1;
+    int magic_skill =1;
 };
 class Paladin: public HalfMage{
 private:

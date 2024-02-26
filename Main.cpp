@@ -1,12 +1,9 @@
 #include <iostream>
 #include <string>
-#include "Warrior.cpp"
-#include "Monk.cpp"
-#include "Barbarian.cpp"
 #include "HalfMage.cpp"
 #include "Mage.cpp"
-#define Magic
-#define NoMage_
+#include "Nomage.cpp"
+#include "class.cpp"
 
 int main(){
     std::cout<<"Choose class"<<std::endl;
@@ -44,14 +41,16 @@ int main(){
     }
     if (i=="B"){
         Barbarian_* a=new Barbarian_();
+        std::cout<<"What's level?"<<std::endl;
+        std::cin>>lvl;
         std::cout<<"Number of attacks:"<<std::endl;
         a->showattaks();
         std::cout<<"Dice of HP:"<<std::endl;
         a->showDiceHP();
         std::cout<<"Rage damage:"<<std::endl;
-        a->GetRampage();
+        a->GetDamage(lvl);
         std::cout<<"Number of rage:"<<std::endl;
-        a->GetRampage();
+        a->GetRampage(lvl);
         delete[] a;
     }
 }

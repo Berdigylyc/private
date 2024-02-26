@@ -1,12 +1,12 @@
+#ifndef Class_
+#define Class_
 #include <iostream>
-
-
 class Class_{
 private:
     int attacks_;
     int DiceHP_;
 public:
-    virtual int showattaks(){}
+    int showattaks(){return attacks_;}
     int showDiceHP(){return DiceHP_;}
-    int showMaxAttaks(){return attacks_;}
 };
+#endif // Class_

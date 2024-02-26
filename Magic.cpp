@@ -1,3 +1,5 @@
+#ifndef Magic
+#define Magic
 #include<iostream>
 #include<string>
 class Magic{
@@ -6,7 +8,7 @@ private:
     int magic_skill;
 public:
     std::string GetMainCharacteristic(){return(main_characteristic);}
-    int GetMagicSkill(){
+    void GetMagicSkill(){
         if (magic_skill==2){
             std::cout<<"First table-level, first string-level of cast"<<std::endl;
             std::cout<<"   1 2 3 4 5 6 7 8 9"<<std::endl;
@@ -73,4 +75,4 @@ public:
         if (magic_skill==0){
         return (lvl/8+2);}}
 };
-
+#endif // Magic

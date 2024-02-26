@@ -1,6 +1,6 @@
 #include <iostream>
 #include "class.cpp"
-
+#include "Magic.cpp"
 class NoMage_ : public Class_{
 private:
     int attacks_=2;
@@ -8,7 +8,7 @@ private:
 class Barbarian_ : public NoMage_, public Magic{
 private:
     int DiceHP_=12;
-    int magic_skill =0;
+    int magic_skill=0;
 public:
     Barbarian_();
     ~Barbarian_();
@@ -29,4 +29,6 @@ class Warrior_: public NoMage_{
 private:
     int attacks_=4;
     int DiceHP_=10;
+public:
+
 };
