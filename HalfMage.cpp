@@ -2,7 +2,7 @@
 #include<string>
 #include "class.cpp"
 #include "Magic.cpp"
-class HalfMage: virtual public Class{
+class HalfMage: virtual public Class_{
 private:
     int attacks_ =2;
     int magicskill =1;
