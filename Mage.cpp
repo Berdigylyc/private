@@ -3,7 +3,7 @@
 #include "class.cpp"
 #include "Magic.cpp"
 
-class Mage_ : public Class_, public Magic{
+class Mage_ : virtual public Class_, public Magic{
 private:
     int attacks_ = 1;
     int magic_skill = 2;
