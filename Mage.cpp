@@ -7,8 +7,6 @@ class Mage_ : virtual public Class_, public Magic{
 private:
     int attacks_ = 1;
     int magic_skill = 2;
-public:
-    int showattacks(){return (attacks_);}
 };
 class Wizard: public Mage_{
 private:
