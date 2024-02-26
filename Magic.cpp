@@ -57,7 +57,8 @@ public:
         }
         }
     int GetRampage(int lvl){
-         if (lvl<3)
+        if (magic_skill==0){
+            if (lvl<3)
 	         return 2;
          if (lvl<6)
         	 return 3;
@@ -66,7 +67,10 @@ public:
          if (lvl<16)
                 return 5;
          return 6;
+        }
         };
-    int GetDamage(){return (lvl/8+2);}
+    int GetDamage(int lvl){
+        if (magic_skill==0){
+        return (lvl/8+2);}}
 };
 
